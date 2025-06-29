@@ -1,0 +1,64 @@
+@import "./header.css";
+
+:root {
+  /* colors */
+  --main-theme: #36b864;
+  --white: #ffffff;
+  --dark-color: #111d15;
+  --text-color1: #666;
+  --text-color2: #4d4d4d;
+
+  /* font sizes */
+  --fs-A: 1.2rem;
+  --fs-B: 1.4rem;
+  --fs-C: 1.6rem;
+  --fs-D: 1.8rem;
+  --fs-E: 2rem;
+  --fs-F: 2.4rem;
+  --fs-G: 2.5rem;
+  --fs-H: 3.2rem;
+  --fs-I: 3.6rem;
+  --fs-J: 4rem;
+  --fs-K: 4.4rem;
+  --fs-L: 5.2rem;
+
+  /* font weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+}
+
+html {
+  @apply text-[52.5%] min-[450]:text-[55%] min-[768]:text-[62.5%];
+}
+
+body {
+  @apply h-[500vh];
+  font-size: var(--fs-C);
+  font-family: var(--bvp);
+  color: var(--dark-color);
+  font-weight: var(--fw-regular);
+}
+
+header {
+  @apply shadow-xl sticky top-0 left-0 right-0 z-30 bg-white px-8 min-[1170]:px-0 py-8;
+}
+
+footer {
+  @apply bg-violet-300 px-8 min-[1170]:px-0;
+}
+
+section {
+  @apply max-w-[1440] mx-auto bg-pink-200 px-8 min-[1170]:px-0;
+}
+
+.sectionContainer {
+  @apply max-w-[1170] mx-auto bg-amber-300;
+}
+
+.headerContainer,
+.footerContainer {
+  @apply max-w-[1170] mx-auto bg-blue-200;
+}

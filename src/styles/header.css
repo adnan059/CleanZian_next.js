@@ -1,0 +1,14 @@
+.headerLogo {
+  @apply flex justify-center items-center;
+}
+
+.headerLogoText h2 {
+  font-size: var(--fs-G);
+  color: var(--dark-color);
+  font-weight: var(--fw-extrabold);
+}
+
+.headerLogoText p {
+  font-size: var(--fs-A);
+  color: var(--text-color2);
+}
