@@ -1,0 +1,30 @@
+.blogContainer {
+  @apply w-full pt-20 flex justify-center items-center min-[850]:items-start flex-wrap min-[850]:flex-nowrap gap-12 lg:gap-16;
+}
+
+.blogBox {
+  @apply max-w-[370px]  flex flex-col items-center text-center gap-12 p-6 border rounded-[20px] bg-[var(--secBg)];
+}
+
+.blogContent {
+  @apply space-y-3;
+}
+
+.blogMetaInfo {
+  font-size: var(--fs-b);
+  @apply flex justify-center items-center gap-12 capitalize text-[var(--text-color1)] mb-8;
+}
+
+.blogTitle {
+  font-size: var(--fs-e);
+  @apply font-bold;
+}
+
+.blogText {
+  font-size: var(--fs-b);
+  @apply text-[var(--text-color1)];
+}
+
+.blogBox button {
+  @apply bg-white font-semibold text-[var(--main-theme)] border-2 border-[var(--main-theme)] hover:bg-[var(--main-theme)] py-5 px-10 rounded-xl hover:text-white transition duration-300;
+}

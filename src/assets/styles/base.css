@@ -1,0 +1,118 @@
+@import "./header.css";
+@import "./hero.css";
+@import "./service.css";
+@import "./team.css";
+@import "./pricing.css";
+@import "./feedback.css";
+@import "./blog.css";
+@import "./contact.css";
+@import "./footer.css";
+@import "aos/dist/aos.css";
+:root {
+  /* colors */
+  --main-theme: #36b864;
+  --white: #ffffff;
+  --text-color0: #111d15;
+  --text-color1: #666;
+  --text-color2: #4d4d4d;
+  --secBg: #ffffff;
+
+  /* font sizes */
+  --fs-a: 1.3rem;
+  --fs-b: 1.5rem;
+  --fs-c: 1.7rem;
+  --fs-d: 1.9rem;
+  --fs-e: 2.1rem;
+  --fs-f: 2.5rem;
+  --fs-g: 2.6rem;
+  --fs-h: 3.3rem;
+  --fs-i: 3.7rem;
+  --fs-j: 4.1rem;
+  --fs-k: 4.5rem;
+  --fs-l: 5.3rem;
+
+  /* font weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+}
+
+.dark {
+  --text-color0: white;
+  --text-color1: #b3b3b3;
+  --text-color2: #6e6e6e;
+  --secBg: #111d15;
+}
+
+html {
+  @apply text-[53.8%] min-[640]:text-[55.5%] min-[768]:text-[62.5%] scroll-smooth;
+}
+
+body {
+  font-size: var(--fs-c);
+  font-family: var(--bvp);
+  color: var(--text-color0);
+  font-weight: var(--fw-regular);
+}
+
+h1 {
+  @apply leading-tight;
+}
+
+h2 {
+  @apply leading-snug;
+}
+
+h3 {
+  @apply leading-normal;
+}
+
+h4,
+h5,
+h6,
+p,
+li,
+div {
+  @apply leading-relaxed;
+}
+
+button {
+  @apply leading-snug cursor-pointer;
+}
+
+section {
+  @apply max-w-[1440] mx-auto px-8 min-[1190]:px-0;
+}
+
+.sectionContainer {
+  @apply max-w-[1170] mx-auto py-[75px];
+}
+
+.sectionHeader {
+  @apply flex flex-col lg:flex-row justify-between pb-10 items-start border-b border-b-[var(--main-theme)];
+}
+
+.sectionHeader .sectionTitle {
+  font-size: var(--fs-k);
+  @apply max-w-[536px] mb-6  capitalize font-semibold mx-auto text-center lg:ml-0 lg:text-left lg:mb-0;
+}
+
+.sectionHeader .sectionInfo {
+  @apply w-full lg:max-w-[436px];
+}
+
+.sectionHeader .sectionInfo h3 {
+  font-size: var(--fs-e);
+  @apply font-semibold mb-3 hidden lg:block capitalize;
+}
+
+.sectionHeader .sectionInfo p {
+  @apply text-[var(--text-color1)] text-center lg:text-left;
+}
+
+.headerContainer,
+.footerContainer {
+  @apply max-w-[1170] mx-auto;
+}

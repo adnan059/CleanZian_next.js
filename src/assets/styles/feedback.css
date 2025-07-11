@@ -1,0 +1,68 @@
+/* Container setup */
+
+.sectionContainer.feedbackContainer {
+  @apply pt-[75px] min-[810]:pt-[150px] mb-[29px] w-full flex flex-col lg:flex-row lg:justify-between  gap-10 lg:gap-32 items-center lg:items-start h-auto relative;
+}
+
+/* Header */
+.feedbackContent {
+  @apply w-full text-center lg:max-w-[500px] lg:text-left;
+}
+
+.feedbackContent h2 {
+  font-size: var(--fs-k);
+  @apply font-semibold;
+}
+
+.feedbackContent p {
+  @apply text-[var(--text-color1)] mt-6 mb-0 lg:mb-9;
+}
+
+/* Slide area */
+.feedbackSlide {
+  @apply w-full flex items-center justify-center pt-8 pr-8;
+}
+
+.feedbackBox {
+  @apply relative w-full max-w-[600px] bg-[var(--secBg)] rounded-[20px] p-6 flex flex-col sm:flex-row gap-6  shadow-md;
+}
+
+.feedbackBox::before {
+  content: "";
+  @apply w-[101%] h-[101%] absolute bg-[var(--main-theme)] -z-10 -top-4 -right-4 rounded-[20px];
+}
+
+.feedbackImage {
+  @apply max-w-[230px] mx-auto  aspect-square;
+}
+
+.feedbackTexts {
+  @apply space-y-2 text-center sm:text-left;
+}
+
+.feedbackTexts h3 {
+  font-size: var(--fs-e);
+  @apply font-bold;
+}
+
+.feedbackTexts p {
+  font-size: var(--fs-b);
+  @apply text-[var(--text-color1)];
+}
+
+.feedbackTexts p:nth-of-type(1) {
+  @apply text-[var(--text-color2)] font-semibold;
+}
+
+/* Buttons */
+
+.controlButtons {
+  @apply absolute bottom-0 lg:bottom-12 left-0 flex justify-center items-center w-full lg:w-max gap-10;
+}
+.controlButtons .navBtn {
+  @apply bg-[var(--main-theme)] p-4 rounded-md border border-[var(--main-theme)] hover:brightness-90 transition;
+}
+
+.controlButtons .navBtn > * {
+  @apply w-[24px] h-[24px] text-white;
+}

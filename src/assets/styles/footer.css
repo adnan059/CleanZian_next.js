@@ -1,0 +1,60 @@
+footer {
+  @apply bg-[#111d15]  px-8 min-[1190]:px-0 text-white pt-[75px];
+}
+.footerParts {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-16;
+}
+
+.footerPart {
+  @apply flex flex-col gap-5;
+}
+
+.footerPart1 .footerLogo {
+  @apply flex items-center gap-1;
+}
+
+.footerPart1 .footerLogo div {
+  @apply flex flex-col;
+}
+
+.footerPart1 .footerLogo div h3 {
+  font-size: var(--fs-g);
+  @apply font-bold;
+}
+
+.footerPart1 .footerLogo div h3 span {
+  @apply text-[var(--main-theme)];
+}
+
+.footerPart1 .footerLogo div p {
+  font-size: var(--fs-a);
+}
+
+.footerPart1 p {
+  @apply max-w-[250px] text-left;
+}
+
+.footerPart h3 {
+  font-size: var(--fs-e);
+  @apply capitalize font-bold mb-2;
+}
+
+.footerPart a {
+  @apply capitalize;
+}
+
+.footerPart4 input {
+  @apply border-2 px-6 py-3 rounded-lg max-w-[300px];
+}
+
+.footerPart4 button {
+  @apply w-max bg-[var(--main-theme)] px-8 py-3 rounded-lg capitalize font-bold;
+}
+
+footer .separator {
+  @apply my-8;
+}
+
+footer .credit {
+  @apply text-center pb-6;
+}

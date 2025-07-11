@@ -2,13 +2,19 @@ import Image from "next/image";
 import React from "react";
 import logoImg from "@/assets/images/logoImg.png";
 import Sidebar from "./Sidebar";
+import MainNav from "./MainNav";
+import ActionButtons from "./ActionButtons";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="headerContainer">
+      <div className={`headerContainer`}>
+        {/* sidebar sheet */}
         <Sidebar />
-        <a className="headerLogo" href="#home">
+
+        {/* header logo */}
+        <Link className="headerLogo" href="/">
           <Image
             className="logoImg"
             src={logoImg}
@@ -17,10 +23,18 @@ const Header = () => {
             alt="logo"
           />
           <div className="headerLogoText">
-            <h2>CleanZia</h2>
+            <h2>
+              Clean<span>Zian</span>
+            </h2>
             <p>Cleaning Services Company</p>
           </div>
-        </a>
+        </Link>
+
+        {/* main nav */}
+        <MainNav />
+
+        {/* action buttons */}
+        <ActionButtons />
       </div>
     </header>
   );

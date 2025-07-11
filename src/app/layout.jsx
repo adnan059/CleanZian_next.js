@@ -1,6 +1,8 @@
-import "@/app/globals.css";
-import Footer from "@/components/myComponents/Footer";
-import Header from "@/components/myComponents/header/Header";
+import "@/assets/styles/globals.css";
+import Footer from "@/components/layout/footer/Footer";
+import Header from "@/components/layout/header/Header";
+import AOSProvider from "@/components/shared/aosProvider/AosProvider";
+import ThemeProvider from "@/components/shared/themeProvider/ThemeProvider";
 
 import { Be_Vietnam_Pro } from "next/font/google";
 
@@ -11,7 +13,7 @@ const bvp = Be_Vietnam_Pro({
 });
 
 export const metadata = {
-  title: "CleanZia",
+  title: "CleanZian",
   description: "Best Cleaning Service Company",
 };
 
@@ -23,9 +25,18 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
     >
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <AOSProvider />
+        <ThemeProvider
+          props={{
+            attribute: "class",
+            defaultTheme: "system",
+            enableSystem: true,
+          }}
+        >
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

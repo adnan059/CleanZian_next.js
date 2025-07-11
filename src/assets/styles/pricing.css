@@ -1,0 +1,75 @@
+.pricing {
+  @apply mb-0 min-[810]:mb-[250px];
+}
+.pricing {
+  @apply bg-[url("../images/priceBg.png")] bg-no-repeat bg-cover;
+}
+
+.priceHeader {
+  @apply text-center;
+}
+
+.priceHeader p {
+  font-size: var(--fs-e);
+  @apply text-white;
+}
+
+.priceHeader h2 {
+  font-size: var(--fs-k);
+  @apply font-semibold mt-3 mb-9 text-white;
+}
+
+.priceToggler {
+  @apply w-max mx-auto bg-[#f4f5f8] py-[6px] px-2 rounded-[24px];
+}
+
+.priceToggler button {
+  @apply py-[7px] px-[22px] rounded-[20px] shadow-md;
+}
+
+.priceToggler button:nth-of-type(1) {
+  @apply bg-[var(--main-theme)]  mr-4 text-white;
+}
+
+.priceToggler button:nth-of-type(2) {
+  @apply bg-white text-black;
+}
+
+.packageContainer {
+  @apply flex justify-center flex-wrap gap-12 mb-0 mt-20   min-[810]:-mb-[320px];
+}
+
+.packageBox {
+  @apply max-w-[370px] w-full  py-[30px] px-[35px] rounded-[20px] shadow-2xl bg-[var(--secBg)];
+}
+
+.packageTitle {
+  font-size: var(--fs-e);
+  @apply uppercase text-center;
+}
+
+.packagePrice {
+  @apply text-center mt-6 mb-9 py-[10px] px-[20px] bg-[var(--main-theme)] rounded-lg text-white font-normal;
+}
+
+.packagePrice span {
+  font-size: var(--fs-h);
+  @apply font-bold;
+}
+
+.packageDetails {
+  @apply space-y-4;
+}
+
+.packageDetails li {
+  font-size: var(--fs-b);
+  @apply text-[var(--text-color1)] capitalize;
+}
+
+.packageDetails li span {
+  @apply ml-2;
+}
+
+.packageBox button {
+  @apply rounded-lg text-[var(--main-theme)] border-2 border-[var(--main-theme)] bg-white hover:bg-[var(--main-theme)] w-full mt-9 py-[20px] hover:text-white font-bold px-2 transition duration-300;
+}

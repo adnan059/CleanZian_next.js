@@ -1,0 +1,112 @@
+header {
+  @apply fixed shadow-xl top-0 left-0 right-0 z-30 bg-[var(--secBg)] px-8 min-[1190]:px-0 py-8;
+}
+
+.headerContainer {
+  @apply flex justify-between items-center;
+}
+
+/* sidebar */
+
+.sidebarMenuButton {
+  @apply block min-[992]:hidden;
+}
+
+.sidebarMenuIcon {
+  @apply cursor-pointer bg-[var(--main-theme)] p-2 text-white rounded-md shadow-md transition hover:bg-green-600;
+}
+
+.sidebarContent {
+  @apply w-96 p-5 [&>button>svg]:w-16 [&>button>svg]:h-16 [&>button>svg]:bg-[var(--main-theme)] [&>button>svg]:text-white [&>button>svg]:rounded-full [&>button>svg]:p-2 [&>button>svg]:shadow-md [&>button>svg]:cursor-pointer [&>button>svg]:transition;
+}
+
+.sidebarTitle {
+  font-size: var(--fs-g);
+  @apply pt-2;
+}
+
+.sidebarTitle span {
+  @apply text-[var(--main-theme)];
+}
+
+.sidebarNav {
+  @apply mt-20;
+}
+
+.sidebarMenu {
+  @apply capitalize w-full text-left border-b-0 mb-8 text-[var(--text-color0)] cursor-pointer;
+}
+
+.sidebarMenuText {
+  font-size: var(--fs-d);
+  @apply capitalize w-full text-left font-medium py-0 my-0 text-[var(--text-color0)] cursor-pointer hover:text-[var(--main-theme)] no-underline [&>svg]:w-8 [&>svg]:h-8 [&>svg]:text-[var(--main-theme)];
+}
+
+.sidebarSubMenuContainer {
+  @apply flex flex-col items-start px-8 py-3 mt-6 gap-6 bg-green-100 dark:bg-[var(--main-theme)];
+}
+
+.sidebarSubMenu {
+  font-size: var(--fs-c);
+  @apply capitalize w-full text-left cursor-pointer text-[var(--text-color0)];
+}
+/* header logo */
+.headerLogo {
+  @apply flex justify-center items-center flex-1 md:flex-initial;
+}
+
+.headerLogoText h2 {
+  font-size: var(--fs-g);
+  color: var(--text-color0);
+  font-weight: var(--fw-extrabold);
+}
+
+.headerLogoText h2 span {
+  @apply text-[var(--main-theme)];
+}
+
+.headerLogoText p {
+  font-size: var(--fs-a);
+  color: var(--text-color2);
+}
+
+/* main navbar */
+.mainNav {
+  @apply relative z-10 justify-center items-center gap-6 hidden min-[992]:flex;
+}
+
+.headerPopTrigger {
+  @apply outline-0;
+}
+
+.mainNavMenu {
+  @apply text-[var(--text-color0)] font-medium hover:text-[var(--text-color0)] transition capitalize;
+}
+
+.mainNavMenu.withSubmenus {
+  @apply flex justify-center items-center gap-1;
+}
+
+.mainNavSubMenuContainer {
+  @apply bg-[var(--secBg)] border shadow-md rounded-md w-max p-3 space-y-2 z-50;
+}
+
+.mainNavSubMenu {
+  font-size: var(--fs-b);
+  @apply block px-3 py-1  text-[var(--text-color0)] hover:bg-green-100 dark:hover:bg-[var(--main-theme)] rounded transition capitalize;
+}
+
+/* header action button */
+.headerActionButtons {
+  @apply flex justify-center items-center gap-3;
+}
+
+.headerActionButtons button {
+  background-color: var(--main-theme);
+
+  @apply px-6 py-4 text-white rounded-md;
+}
+
+.headerActionButtons button:nth-of-type(1) {
+  @apply hidden min-[550]:block;
+}

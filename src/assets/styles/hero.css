@@ -1,0 +1,51 @@
+.hero {
+  @apply min-h-[586px] bg-[url("../images/heroBanner.png")] bg-cover bg-center bg-no-repeat mt-[83px] sm:mt-[86px] md:mt-[97px] mb-[40px] relative;
+}
+
+.hero::after {
+  content: "";
+  @apply block md:hidden w-full h-full top-0 left-0 absolute bg-[#ffffff79] z-10;
+}
+
+.hero .sectionContainer {
+  @apply flex flex-col justify-center h-[650px] sm:h-[586px]  relative z-20;
+}
+
+.heroContent {
+  @apply max-w-[610px] w-full;
+}
+
+.heroSubtitle {
+  font-size: var(--fs-e);
+  @apply text-[var(--text-color2)] capitalize;
+}
+
+.heroTitle {
+  font-size: var(--fs-l);
+  @apply font-[var(--fw-bold)] capitalize mt-3 mb-6 wrap-normal text-green-950;
+}
+
+.heroText {
+  font-size: var(--fs-d);
+  @apply mb-10;
+}
+
+.heroText {
+  @apply text-[var(--text-color2)];
+}
+
+.heroCtaButtons {
+  @apply flex justify-start items-center gap-6 flex-wrap;
+}
+
+.heroCtaButtons button {
+  @apply py-4 px-8 font-semibold rounded-md;
+}
+
+.heroCtaButtons button:nth-of-type(1) {
+  @apply bg-[var(--main-theme)] text-white;
+}
+
+.heroCtaButtons button:nth-of-type(2) {
+  @apply bg-white text-[var(--main-theme)]  border-2 border-[var(--main-theme)];
+}

@@ -1,0 +1,63 @@
+.contactContainer {
+  @apply flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:items-start   gap-20 lg:gap-10;
+}
+
+/* contact options */
+
+.contactInfo {
+  @apply max-w-[500px] w-full  space-y-7;
+}
+
+.contactInfo h2 {
+  font-size: var(--fs-j);
+  @apply font-medium mb-10 text-center lg:text-left;
+}
+
+.contactOption {
+  @apply flex p-5 gap-6 items-center bg-[#f1f1f1] dark:bg-[var(--secBg)] rounded-2xl;
+}
+
+.contactOption span:nth-of-type(1) {
+  @apply bg-[var(--main-theme)] w-20 h-20 rounded-full flex justify-center items-center text-white;
+}
+
+.contactOption span h3 {
+  font-size: var(--fs-e);
+  @apply font-semibold mb-2;
+}
+
+.contactOption span p,
+.contactOption span a {
+  @apply text-[var(--text-color1)];
+}
+
+/* contact form */
+.contactFormContainer {
+  @apply max-w-[500px]  w-full;
+}
+
+.contactFormContainer h2 {
+  font-size: var(--fs-j);
+  @apply font-medium mb-5 text-center lg:text-left;
+}
+
+.contactFormContainer p {
+  @apply text-[var(--text-color1)] mb-10;
+}
+
+.contactForm {
+  @apply flex flex-col gap-5;
+}
+
+.contactForm input,
+.contactForm textarea {
+  @apply border px-5 py-3 rounded-md;
+}
+
+.contactForm textarea {
+  @apply h-[120px] resize-none;
+}
+
+.contactSendMessageBtn {
+  @apply bg-[var(--main-theme)] py-4 px-8 mt-5 w-max mx-auto rounded-md text-white flex justify-center items-center gap-2;
+}
