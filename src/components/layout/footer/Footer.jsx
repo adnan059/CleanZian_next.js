@@ -48,7 +48,10 @@ const Footer = () => {
           </div>
         </div>
         <hr className="separator" />
-        <div className="credit">2025 CleanZian All Rights Reserved</div>
+        <div className="credit">
+          &copy; 2025 CleanZian — Designed & developed by Md. Adnan Faruk. All
+          rights reserved.
+        </div>
       </div>
     </footer>
   );
